@@ -9,7 +9,6 @@ const doctors = [
     "Dr. Nashir Khan",
     "Dr. Amjad Ali",
     "Dr. Minhajuddin Ahmad",
-    "Dr. Minhajuddin Ahmad"
 ];
 
 const selectOptions = doctors
