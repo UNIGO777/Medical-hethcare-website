@@ -193,6 +193,52 @@ const data = {
             { icon: "fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." }
         ],
         
+    },
+    homecare : {
+        services : [
+            
+            { 
+              icon: "fa-users", 
+              title: "Elder Care", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+                icon: "fa-heart", 
+                title: "Home Nursing Services", 
+                description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+              },
+            { 
+              icon: "fa-walking", 
+              title: "Physiotherapy", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+              icon: "fa-user-md", 
+              title: "Doctor's Consultation", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+              icon: "fa-briefcase-medical", 
+              title: "Medical Equipments", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+              icon: "fa-procedures", 
+              title: "Paralysis Treatment", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+              icon: "fa-user-nurse", 
+              title: "Trained Attendants", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+              icon: "fa-hands-helping", 
+              title: "Care Taker At Home", 
+              description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            }
+          ],
+          
     }
 };
 
@@ -201,7 +247,7 @@ function loadDivision(division, button) {
     const serviceContainer = document.getElementById("service");
     const buttons = document.querySelectorAll("#division-buttons button");
     const path = window.location.pathname;
-    console.log(path,"pathanem")
+    
 
     // Clear existing services
     serviceContainer.innerHTML = "";
@@ -220,7 +266,7 @@ function loadDivision(division, button) {
             card.style.cursor = "pointer";
             card.style.marginBottom = '20px'
             card.innerHTML = `
-                <div class="service-item bg-light  rounded d-flex flex-column align-items-center justify-content-center text-center" >
+                <div class="service-item bg-light  rounded d-flex flex-column align-items-center justify-content-center text-center" onclick="locateContact()">
                     <div class="service-icon mb-4">
                         <i class="fa fa-2x ${service.icon} text-white"></i>
                     </div>
@@ -266,6 +312,11 @@ document.getElementById("doctor-modal").addEventListener("click", (e) => {
         closeModal();
     }
 });
+
+
+const locateContact = () => {
+    window.location.href = 'contact.html'
+}
 
 // Initialize
 
