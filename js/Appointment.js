@@ -1,8 +1,16 @@
 const doctors = [
-    "Dr. Ramesh Kumar",
-    "Dr. Priya Sharma",
-    "Dr. Anil Mehta"
-]
+    "Dr. Ashish Gupta",
+    "Dr. Neha Gupta",
+    "Dr. Chetna",
+    "Dr. Anshul Jain",
+    "Dr. Chetna",
+    "Dr. Anshul Jain",
+    "Dr. Rishabh Jain",
+    "Dr. Nashir Khan",
+    "Dr. Amjad Ali",
+    "Dr. Minhajuddin Ahmad",
+    "Dr. Minhajuddin Ahmad"
+];
 
 const selectOptions = doctors
     .map(doctor => `<option value="${doctor}">${doctor}</option>`)

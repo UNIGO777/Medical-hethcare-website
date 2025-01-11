@@ -37,9 +37,9 @@
         <div class="row">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+012 345 6789</a>
+                    <div class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+91 94253 82786</div>
                     <span class="text-body">|</span>
-                    <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>info@healthcare.com</a>
+                    <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>healthcare.bhopal@gmail.com</a>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
@@ -170,6 +170,7 @@
             <div class="d-flex justify-content-center mb-4 px-4" id="division-buttons">
                 <button class="btn btn-secondary mx-2 p-2 px-5" id="btn-diagnostics" onclick="loadDivision('diagnostics', this)">Diagnostics</button>
                 <button class="btn btn-secondary mx-2 p-2 px-5" id="btn-medical" onclick="loadDivision('medical', this)">Medical Department</button>
+                <button class="btn btn-secondary mx-2 p-2 px-5" id="btn-home-care" onclick="loadDivision('homecare', this)">Home Care</button>
             </div>
             <div id="service" class="row mt-5">
                 <!-- Cards will be dynamically injected here -->
@@ -252,22 +253,14 @@
             <div class="col-lg-6">
                 <div class="bg-white text-center rounded p-5">
                     <h1 class="mb-4">Book An Appointment</h1>
+                    
                     <form>
                         <div class="row g-3">
+                            
                             <div class="col-12 col-sm-6">
-                                <select class="form-select bg-light border-0" style="height: 55px;">
-                                    <option selected>Choose Department</option>
-                                    <option value="1">Department 1</option>
-                                    <option value="2">Department 2</option>
-                                    <option value="3">Department 3</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <select class="form-select bg-light border-0" style="height: 55px;">
-                                    <option selected>Select Doctor</option>
-                                    <option value="1">Doctor 1</option>
-                                    <option value="2">Doctor 2</option>
-                                    <option value="3">Doctor 3</option>
+                                <select id="selectDocs" class="form-select bg-light border-0" style="height: 55px;">
+                                    <option  selected>Select Doctor</option>
+                                    
                                 </select>
                             </div>
                             <div class="col-12 col-sm-6">
@@ -291,7 +284,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3 btn-bg-primary border-0" type="submit">Make An Appointment</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
                             </div>
                         </div>
                     </form>
@@ -332,18 +325,16 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="img/doctor1.jpg" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <h3>Dr. Ashish Gupta</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Orthopedic Spine Surgeon</h6>
                                 <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3 btn-bg-primary border-0" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3 btn-bg-primary border-0" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle btn-bg-primary border-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                
                             </div>
                         </div>
                     </div>
@@ -351,18 +342,16 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-2.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="./img/doctor2.jpg" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <h3>Dr. Neha Gupta</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Oncologist Specialist</h6>
                                 <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3 btn-bg-primary border-0" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3 btn-bg-primary border-0" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle btn-bg-primary border-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                
                             </div>
                         </div>
                     </div>
@@ -370,12 +359,12 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="./img/doctor3.jpg" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <h3>Dr. Chetna</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Nephrologist Specialist</h6>
                                 <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
@@ -400,8 +389,8 @@
                     <h4 class="d-inline-block text-color-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
                     <p class="mb-4">We’re here to help you with your questions or concerns. Feel free to reach out to us for assistance, inquiries, or collaboration opportunities. Connect with us and let’s make something great together!</p>
                     <p class="mb-2"><i class="fa fa-map-marker-alt text-color-primary me-3"></i>41 Motia Talab Road Gpo Royal Market, Bhopal, Madhya Pradesh 462001</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-color-primary me-3"></i>info@healthcare.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-color-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-color-primary me-3"></i>healthcare.bhopal@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-color-primary me-3"></i>+91 94253 82786</p>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h4 class="d-inline-block text-color-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
@@ -461,6 +450,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/Appointment.js"></script>
+
 </body>
 
 </html>

@@ -157,203 +157,42 @@ window.addEventListener("scroll", () => {
 const data = {
     diagnostics: {
         services: [
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
-            {
-                icon: "fa-flask",
-                title: "Blood Test",
-                description: "Comprehensive blood tests for all health diagnostics.",
-                specialists: ["Hematologist", "Pathologist"],
-                doctors: [
-                    {
-                        name: "Dr. John Doe",
-                        specialization: "Hematologist",
-                        image: "img/team-1.jpg",
-                        bio: "Expert in hematology with 10+ years of experience.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    },
-                    {
-                        name: "Dr. Jane Smith",
-                        specialization: "Pathologist",
-                        image: "img/team-2.jpg",
-                        bio: "Renowned diagnostic expert specializing in pathology.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            },
+            { icon: "fa-vial", title: "Glucose-6 Phosphate Dehydrogenase (G6PD), Qualitative", description: "Assess G6PD enzyme activity qualitatively." },
+            
+            { icon: "fa-flask", title: "1,3 BETA-D-GLUCAN", description: "Diagnostic marker for fungal infections." },
+            { icon: "fa-dna", title: "14q32.3 by FISH IGH gene rearrangement", description: "Bone marrow analysis for IGH gene rearrangements." },
+            { icon: "fa-vials", title: "17-OH Progesterone (17-Hydroxy Progesterone)", description: "Hormonal evaluation for endocrine disorders." },
+            { icon: "fa-vials", title: "5-Hydroxyindoleacetic acid (5-HIAA), 24 Hours urine", description: "Evaluation for carcinoid syndrome." },
+            { icon: "fa-dna", title: "Abnormal Hemoglobin study (Hb Electrophoresis)", description: "Detection of hemoglobin variants and disorders." },
+           
+           
         ],
-        
+        additionalServices: [
+            { icon: "fa-vials", title: "5-Hydroxyindoleacetic acid (5-HIAA), 24 Hours urine", description: "Evaluation for carcinoid syndrome." },
+            { icon: "fa-dna", title: "Abnormal Hemoglobin study (Hb Electrophoresis)", description: "Detection of hemoglobin variants and disorders." },
+            { icon: "fa-user-md", title: "Absolute Basophil Count", description: "Measurement of basophils in blood." },
+            { icon: "fa-user-md", title: "Absolute CD19 Count by flowcytometry", description: "Quantification of CD19+ B-cells for immunological assessments." },
+            { icon: "fa-syringe", title: "Blood Test", description: "Comprehensive blood tests for health diagnostics." },
+            { icon: "fa-capsules", title: "5-Fluorouracil (5-FU)", description: "Drug level monitoring for chemotherapy." },
+            { icon: "fa-user-md", title: "Absolute Basophil Count", description: "Measurement of basophils in blood." },
+            { icon: "fa-user-md", title: "Absolute CD19 Count by flowcytometry", description: "Quantification of CD19+ B-cells for immunological assessments." }
+        ]
     },
     medical: {
         services: [
-            {
-                icon: "fa-heartbeat",
-                title: "Cardiology",
-                description: "Advanced cardiology services for heart health.",
-                specialists: ["Cardiologist"],
-                doctors: [
-                    {
-                        name: "Dr. Emily Carter",
-                        specialization: "Cardiologist",
-                        image: "img/team-3.jpg",
-                        bio: "Experienced cardiologist with a focus on patient care.",
-                        socials: { twitter: "#", facebook: "#", linkedin: "#" }
-                    }
-                ]
-            }
-        ]
+            { icon: "fa-heart", title: "Cardiology", description: "Specialized care for heart and cardiovascular health." },
+            { icon: "fa-bone", title: "Orthology", description: "Diagnosis and treatment of musculoskeletal disorders." },
+            { icon: "fa-dna", title: "Oncology", description: "Comprehensive cancer care and treatments." },
+            { icon: "fa-lungs", title: "Pulmonology", description: "Treatment for respiratory system disorders." },
+            { icon: "fa-child", title: "Pediatrics", description: "Healthcare services for children and adolescents." },
+            { icon: "fa-stethoscope", title: "General Medicine", description: "Primary care for a wide range of health issues." },
+            { icon: "fa-procedures", title: "Laparoscopy", description: "Minimally invasive surgical procedures." },
+            { icon: "fa-female", title: "Gynaecology", description: "Comprehensive women’s health services." },
+            { icon: "fa-walking", title: "Physiotherapy", description: "Rehabilitation and physical therapy services." },
+            { icon: "fa-medkit", title: "Emergency Medicine", description: "Critical care and emergency medical services." },
+            { icon: "fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." }
+        ],
+        
     }
 };
 
@@ -362,6 +201,7 @@ function loadDivision(division, button) {
     const serviceContainer = document.getElementById("service");
     const buttons = document.querySelectorAll("#division-buttons button");
     const path = window.location.pathname;
+    console.log(path,"pathanem")
 
     // Clear existing services
     serviceContainer.innerHTML = "";
@@ -370,7 +210,7 @@ function loadDivision(division, button) {
     buttons.forEach(btn => btn.classList.remove("active-button"));
     button.classList.add("active-button");
     const services = data[division]?.services || [];
-    const maxServices = path.includes("index.html") ? 5 : services.length;
+    const maxServices = path.includes("index.html") || path === "/" ? 5 : services.length;
 
     // Render service cards
     if (data[division]?.services) {
@@ -386,13 +226,13 @@ function loadDivision(division, button) {
                     </div>
                     <h4 class="mb-3">${service.title}</h4>
                     <p class="m-0">${service.description}</p>
-                    <p class="text-primary small">Specialists: ${service.specialists.join(", ")}</p>
+                    
                    
                 </div>
             `;
             serviceContainer.appendChild(card);
         });
-        if (path.includes("index.html") && services.length > 5) {
+        if (path.includes("index.html") || path == "/" && services.length > 5) {
             const seeAllCard = document.createElement("div");
             seeAllCard.className = "col-lg-4 col-md-6";
             seeAllCard.style.cursor = "pointer";

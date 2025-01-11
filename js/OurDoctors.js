@@ -1,34 +1,48 @@
 const doctors = [
     {
-        name: "Dr. Ramesh Kumar",
-        specialization: "Cardiologist",
-        image: "/img/team-2.jpg",
-        social: {
-            facebook: "#",
-            twitter: "#",
-            linkedin: "#"
-        }
+        name: "Dr. Ashish Gupta",
+        specialization: "Orthopedic Spine Surgeon",
+        image: "./img/doctor1.jpg"
+       
     },
     {
-        name: "Dr. Priya Sharma",
-        specialization: "Neurologist",
-        image: "/img/team-3.jpg",
-        social: {
-            facebook: "#",
-            twitter: "#",
-            linkedin: "#"
-        }
+        name: "Dr. Neha Gupta",
+        specialization: "Oncologist",
+        image: "./img/doctor2.jpg"
+        
     },
     {
-        name: "Dr. Anil Mehta",
-        specialization: "Orthopedic Surgeon",
-        image: "img/team-2.jpg",
-        social: {
-            facebook: "#",
-            twitter: "#",
-            linkedin: "#"
-        }
-    }
+        name: "Dr. Chetna",
+        specialization: "Nephrologist",
+        image: "./img/doctor3.jpg"
+    
+    },
+    {
+        name : "Dr. Anshul Jain",
+        specialization:"Physician",
+        image:"./img/doctor4.jpg" 
+    },
+    {
+        name : "Dr. Rishabh Jain",
+        specialization:"General & Leproscopic Surgeon",
+        image:"./img/doctor5.jpg" 
+    },
+    {
+        name : "Dr. Nashir Khan",
+        specialization:"Cardiothoracic Surgeon",
+        image:"./img/doctor6.jpg" 
+    },
+    {
+        name : "Dr. Amjad Ali",
+        specialization:"Cardiologist",
+        image:"./img/doctor7.jpg" 
+    },
+    {
+        name : "Dr. Minhajuddin Ahmad",
+        specialization:"Pediatrician",
+        image:"./img/doctor8.1.jpg" 
+    },
+   
 ];
 
 
@@ -44,11 +58,7 @@ function generateDoctors() {
                 <div class="team-item bg-light rounded overflow-hidden">
                     <div class="team-img position-relative overflow-hidden">
                         <img class="img-fluid w-100" src="${doctor.image}" style="height: 300px; object-fit: cover;" alt="${doctor.name}">
-                        <div class="team-social">
-                            <a class="btn btn-square" href="${doctor.social.facebook}"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square" href="${doctor.social.twitter}"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square" href="${doctor.social.linkedin}"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        
                     </div>
                     <div class="text-center py-4">
                         <h5 class="text-primary">${doctor.name}</h5>
