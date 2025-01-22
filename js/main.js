@@ -1,5 +1,3 @@
-
-
 (function ($) {
     "use strict";
     
@@ -157,13 +155,61 @@ window.addEventListener("scroll", () => {
 const data = {
     diagnostics: {
         services: [
-            { icon: "fa-vial", title: "Glucose-6 Phosphate Dehydrogenase (G6PD), Qualitative", description: "Assess G6PD enzyme activity qualitatively." },
-            
-            { icon: "fa-flask", title: "1,3 BETA-D-GLUCAN", description: "Diagnostic marker for fungal infections." },
-            { icon: "fa-dna", title: "14q32.3 by FISH IGH gene rearrangement", description: "Bone marrow analysis for IGH gene rearrangements." },
-            { icon: "fa-vials", title: "17-OH Progesterone (17-Hydroxy Progesterone)", description: "Hormonal evaluation for endocrine disorders." },
-            { icon: "fa-vials", title: "5-Hydroxyindoleacetic acid (5-HIAA), 24 Hours urine", description: "Evaluation for carcinoid syndrome." },
-            { icon: "fa-dna", title: "Abnormal Hemoglobin study (Hb Electrophoresis)", description: "Detection of hemoglobin variants and disorders." },
+            {
+                icon: "fas fa-tint",
+                title: "BLOOD CHECKUP", 
+                description: "Complete blood analysis including CBC, lipid profile, and blood sugar. Time taken: 2 to 3 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-pills",
+                title: "VITAMIN CHECKUP",
+                description: "Comprehensive vitamin and mineral deficiency screening. Time taken: 2 to 3 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-shield-virus",
+                title: "ALLERGY TEST",
+                description: "Detailed allergy screening and sensitivity tests. Time taken: 2 to 3 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-stethoscope",
+                title: "BASIC HEALTH CHECK-UP",
+                description: "Complete basic health screening. Time taken: 3 to 4 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-heart", 
+                title: "COMPREHENSIVE HEART CHECK-UP",
+                description: "Detailed cardiac evaluation. Time taken: 3 to 4 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-user-tie",
+                title: "EXECUTIVE HEALTH CHECK-UP",
+                description: "Comprehensive executive screening. Time taken: 4 to 5 Hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-hospital-user",
+                title: "WHOLE BODY CHECK-UP",
+                description: "Complete body examination. Time taken: 3 to 4 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-venus",
+                title: "WELL WOMEN HEALTH CHECK-UP",
+                description: "Women-specific health screening. Time taken: 3 to 4 hours (Approx)."
+            },
+            {
+                icon: "fas fa-user-plus",
+                title: "SENIOR CITIZENS HEALTH CHECK-UP", 
+                description: "Elder-focused health assessment. Time taken: 4 to 5 Hours (Approx)."
+            },
+            {
+                icon: "fas fa-tint",
+                title: "ADVANCED DIABETIC CHECK-UP",
+                description: "Comprehensive diabetes screening. Time taken: 3 to 4 hours (Approx)."
+            },
+            {
+                icon: "fa-solid fa-child",
+                title: "CHILD HEALTH CHECK-UP",
+                description: "Pediatric health assessment. Time taken: 3 to 4 hours (Approx)."
+            }
            
            
         ],
@@ -187,10 +233,26 @@ const data = {
             { icon: "fa-child", title: "Pediatrics", description: "Healthcare services for children and adolescents." },
             { icon: "fa-stethoscope", title: "General Medicine", description: "Primary care for a wide range of health issues." },
             { icon: "fa-procedures", title: "Laparoscopy", description: "Minimally invasive surgical procedures." },
-            { icon: "fa-female", title: "Gynaecology", description: "Comprehensive women’s health services." },
+            { icon: "fa-female", title: "Gynaecology", description: "Comprehensive women's health services." },
             { icon: "fa-walking", title: "Physiotherapy", description: "Rehabilitation and physical therapy services." },
             { icon: "fa-medkit", title: "Emergency Medicine", description: "Critical care and emergency medical services." },
             { icon: "fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." }
+        ],
+        
+    },
+    healthinsurance : {
+        services: [
+            { icon: "fa-shield-alt", title: "Individual Health Insurance", description: "Comprehensive coverage for individuals with customizable plans." },
+            { icon: "fa-users", title: "Family Health Insurance", description: "Protection for the entire family with extensive medical coverage." },
+            { icon: "fa-building", title: "Corporate Health Insurance", description: "Group health insurance plans for businesses and employees." },
+            { icon: "fa-heart", title: "Critical Illness Coverage", description: "Specialized coverage for major illnesses and conditions." },
+            { icon: "fa-hospital", title: "Hospital Cash Benefits", description: "Daily allowance during hospitalization periods." },
+            { icon: "fa-wheelchair", title: "Senior Citizen Plans", description: "Tailored insurance plans for elderly healthcare needs." },
+            { icon: "fa-baby", title: "Maternity Coverage", description: "Insurance for pregnancy and childbirth related expenses." },
+            { icon: "fa-pills", title: "OPD Coverage", description: "Coverage for regular doctor visits and medications." },
+            { icon: "fa-tooth", title: "Dental Insurance", description: "Coverage for dental procedures and treatments." },
+            { icon: "fa-eye", title: "Vision Care Coverage", description: "Insurance for eye care and vision related expenses." },
+            { icon: "fa-globe", title: "International Coverage", description: "Health insurance coverage while traveling abroad." }
         ],
         
     },
@@ -248,6 +310,18 @@ function loadDivision(division, button) {
     const buttons = document.querySelectorAll("#division-buttons button");
     const path = window.location.pathname;
     
+    // Update appointment form services dropdown if it exists
+    const servicesSelect = document.getElementById("selectDocs");
+    if (servicesSelect) {
+        servicesSelect.innerHTML = '<option value="" selected disabled>Select Service</option>';
+        const services = data[division]?.services || [];
+        services.forEach(service => {
+            const option = document.createElement("option");
+            option.value = service.title;
+            option.textContent = service.title;
+            servicesSelect.appendChild(option);
+        });
+    }
 
     // Clear existing services
     serviceContainer.innerHTML = "";
