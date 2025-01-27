@@ -15,7 +15,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family:"Archivo Black", serif;
+    font-size: 2em;
 }
+@media (max-width: 600px) {
+    .logo-text{
+        font-size: 5vw;
+    }
+  }
+
+
 
 .active-button {
     background-color: var(--primary) !important; /* Primary color */
