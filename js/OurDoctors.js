@@ -1,8 +1,8 @@
 const doctors = [
     {
         name: "Dr. Ashish Gupta",
-        specialization: "Orthopedic Spine Surgeon",
-        image: "./img/doctor1.jpg"
+        specialization: "Consultant Spine Surgeon",
+        image: "./img/drAshish.png"
        
     },
     {

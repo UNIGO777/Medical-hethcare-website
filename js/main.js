@@ -156,8 +156,28 @@ const data = {
     diagnostics: {
         services: [
             {
+                icon: "fas fa-brain",
+                title: "MRI SCAN",
+                description: "Magnetic Resonance Imaging for detailed internal images. Time taken: 30 to 60 minutes (Approx)."
+            },
+            {
+                icon: "fas fa-x-ray",
+                title: "CT SCAN",
+                description: "Computed Tomography scan for cross-sectional images. Time taken: 10 to 30 minutes (Approx)."
+            },
+            {
+                icon: "fas fa-wave-square",
+                title: "3D/4D SONOGRAPHY",
+                description: "Ultrasound imaging for various diagnostic purposes. Time taken: 30 to 60 minutes (Approx)."
+            },
+            {
                 icon: "fas fa-tint",
-                title: "BLOOD CHECKUP", 
+                title: "COLOR DOPPLER",
+                description: "Non-invasive test to evaluate blood flow through vessels. Time taken: 30 to 45 minutes (Approx)."
+            },
+            {
+                icon: "fas fa-tint",
+                title: "BLOOD TEST", 
                 description: "Complete blood analysis including CBC, lipid profile, and blood sugar. Time taken: 2 to 3 hours (Approx)."
             },
             {
@@ -209,8 +229,12 @@ const data = {
                 icon: "fa-solid fa-child",
                 title: "CHILD HEALTH CHECK-UP",
                 description: "Pediatric health assessment. Time taken: 3 to 4 hours (Approx)."
-            }
-           
+            },
+            {
+                icon: "fas fa-clipboard-list",
+                title: "OTHER DIAGNOSTIC TESTS",
+                description: "Various other diagnostic tests as per physician's recommendation. Time taken: Varies."
+            },
            
         ],
         additionalServices: [
@@ -227,16 +251,26 @@ const data = {
     medical: {
         services: [
             { icon: "fa-heart", title: "Cardiology", description: "Specialized care for heart and cardiovascular health." },
-            { icon: "fa-bone", title: "Orthology", description: "Diagnosis and treatment of musculoskeletal disorders." },
-            { icon: "fa-dna", title: "Oncology", description: "Comprehensive cancer care and treatments." },
-            { icon: "fa-lungs", title: "Pulmonology", description: "Treatment for respiratory system disorders." },
+            { icon: "fa-brain", title: "Neurology", description: "Diagnosis and treatment of nervous system disorders." },
+            { icon: "fa-user-md", title: "Neurosurgery", description: "Surgical treatment for neurological conditions." },
+            { icon: "fa-bone", title: "Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
+            { icon: "fas fa-kidney", title: "Nephrology", description: "Care for kidney-related health issues." },
+            { icon: "fa-radiation", title: "Radiation Oncology", description: "Treatment of cancer using radiation therapy." },
+            { icon: "fa-user-md", title: "Gastroenterology", description: "Diagnosis and treatment of digestive system disorders." },
+            { icon: "fa-scalpel", title: "Gastro Surgery", description: "Surgical procedures for gastrointestinal issues." },
+            { icon: "fa-syringe", title: "Onco Surgery", description: "Surgical treatment for cancer patients." },
+            { icon: "fa-user-md", title: "Medical Oncology", description: "Comprehensive cancer care and treatments." },
+            { icon: "fa-user-md", title: "Reproductive Medicine", description: "Treatment for reproductive health issues." },
+            { icon: "fa-female", title: "Obstetrics and Gynaecology", description: "Care for women's reproductive health." },
+           
+            { icon: "fa-baby", title: "Pediatrics & Neonatology", description: "Healthcare services for newborns and children." },
+            { icon: "fa-ear", title: "ENT", description: "Care for ear, nose, and throat disorders." },
+            { icon: "fa-procedures", title: "Urology and Urosurgery", description: "Care for urinary tract and male reproductive system." },
             { icon: "fa-child", title: "Pediatrics", description: "Healthcare services for children and adolescents." },
-            { icon: "fa-stethoscope", title: "General Medicine", description: "Primary care for a wide range of health issues." },
-            { icon: "fa-procedures", title: "Laparoscopy", description: "Minimally invasive surgical procedures." },
-            { icon: "fa-female", title: "Gynaecology", description: "Comprehensive women's health services." },
-            { icon: "fa-walking", title: "Physiotherapy", description: "Rehabilitation and physical therapy services." },
-            { icon: "fa-medkit", title: "Emergency Medicine", description: "Critical care and emergency medical services." },
-            { icon: "fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." }
+            { icon: "fa-user-md", title: "Psychiatrist", description: "Mental health assessment and treatment." },
+            
+            
+            { icon: "fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." },
         ],
         
     },
@@ -395,7 +429,7 @@ const locateContact = () => {
 // Initialize
 
 document.addEventListener('DOMContentLoaded', () => {
-    const defaultButton = document.getElementById('btn-diagnostics');
-    loadDivision('diagnostics', defaultButton);
+    const defaultButton = document.getElementById('btn-medical');
+    loadDivision('medical', defaultButton);
 });
 

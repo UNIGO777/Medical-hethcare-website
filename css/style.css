@@ -1,4 +1,8 @@
 /********** Template CSS **********/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 :root {
     --primary: #13C5DD;
     --secondary: #354F8E;
@@ -10,7 +14,7 @@
     background: linear-gradient(to left, #354F8E, #13C5DD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:"Archivo Black", serif;
 }
 
 .active-button {
@@ -223,7 +227,7 @@
 }
 
 .hero-header {
-    background: url('https://images.unsplash.com/photo-1651186857043-f857917c6d6b?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') top right no-repeat;
+    background: url('../img/hero.jpg') top right no-repeat;
     background-size: cover;
 }
 
