@@ -103,9 +103,9 @@
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h5 class="d-inline-block logo-gray text-uppercase text-white border-bottom border-5 p-2"
-                        style="border-color: rgba(256, 256, 256, .3) !important;  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);">Find Best Options In Your City</h5>
-                    <h1 class="display-1 text-white mb-md-4" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">Best Healthcare Solution In Your City</h1>
+                    <h5 class="d-inline-block logo-gray text-uppercase text-black border-bottom border-5 p-2"
+                        style=" background: white; backdrop-filter: blur(9px);   border-radius: 10px; font-size: 2em;">Find Best Options In Your City</h5>
+                    <h1 class="display-1 text-white mb-md-4" style="text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);">Best Healthcare Solution</h1>
                     <div class="pt-2">
                         <a href="OurDoctors.html"
                             class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2 find-doctor-btn">Find Best
@@ -158,17 +158,6 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" style="width: 55px;" class="mb-1"
                                     viewBox="0 0 24 24" fill="rgb(20 197 221)">
                                     <path
-                                        d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20ZM11 13V19H13V13H11Z">
-                                    </path>
-                                </svg>
-                                <h6 class="mb-0">Home<small class="d-block text-primary">Helthcare</small></h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 55px;" class="mb-1"
-                                    viewBox="0 0 24 24" fill="rgb(20 197 221)">
-                                    <path
                                         d="M21 20H23V22H1V20H3V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V20ZM11 8H9V10H11V12H13V10H15V8H13V6H11V8ZM14 20H16V14H8V20H10V16H14V20Z">
                                     </path>
                                 </svg>
@@ -180,12 +169,43 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" style="width: 55px;" class="mb-1"
                                     viewBox="0 0 24 24" fill="rgb(20 197 221)">
                                     <path
+                                        d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20ZM11 13V19H13V13H11Z">
+                                    </path>
+                                </svg>
+                                <h6 class="mb-0">Home<small class="d-block text-primary">Helthcare</small></h6>
+                            </div>
+                        </div>
+                       
+                        <div class="col-sm-3 col-6">
+                            <div class="bg-light text-center rounded-circle py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 55px;" class="mb-1"
+                                    viewBox="0 0 24 24" fill="rgb(20 197 221)">
+                                    <path
                                         d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z">
                                     </path>
                                 </svg>
                                 <h6 class="mb-0">Health<small class="d-block text-primary">Insurance</small></h6>
                             </div>
                         </div>
+                        <div class="col-sm-3 col-6">
+                            <div class="bg-light text-center rounded-circle py-4">
+                                <i class="fa fa-3x fa-stethoscope text-color-primary mb-3"></i>
+                                <h6 class="mb-0">Dialysis<small class="d-block text-primary">Services</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div class="bg-light text-center rounded-circle py-4">
+                                <i class="fa fa-3x fa-pills text-color-primary mb-3"></i>
+                                <h6 class="mb-0">Pharmacy<small class="d-block text-primary">Services</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                            <div class="bg-light text-center rounded-circle py-4">
+                                <i class="fa fa-3x fa-ambulance text-color-primary mb-3"></i>
+                                <h6 class="mb-0">Ambulance<small class="d-block text-primary">Service</small></h6>
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -213,7 +233,7 @@
                     onclick="loadDivision('homecare', this)">Home Care</button>
                 <button class="btn btn-secondary mx-2 p-2 px-5" id="btn-home-care"
                     onclick="loadDivision('healthinsurance', this)">Health Insurance</button>
-                    <button class="btn btn-secondary mx-2 p-2 px-5" id="btn-home-care" onclick="loadDivision('dyglasis', this)">Dyglasis services</button>
+                    <button class="btn btn-secondary mx-2 p-2 px-5" id="btn-home-care" onclick="loadDivision('Dialysis', this)">Dialysis services</button>
             </div>
             <div id="service" class="row mt-5">
                 <!-- Cards will be dynamically injected here -->

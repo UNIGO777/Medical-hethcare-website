@@ -333,12 +333,12 @@ const data = {
           ],
           
     },
-    dyglasis:{
+    Dialysis:{
         services : [
             { 
               icon: "fa-stethoscope", 
-              title: "Dyglasis Services", 
-              description: "Comprehensive dyglasis services to ensure accurate health assessments and timely interventions."
+              title: "Dialysis Services", 
+              description: "Expert dialysis services providing thorough health evaluations and prompt medical responses."
             },
             ]
         }
