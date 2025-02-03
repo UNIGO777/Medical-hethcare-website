@@ -25,7 +25,7 @@ const doctors = [
     {
         name : "Dr. Rishabh Jain",
         specialization:"General & Leproscopic Surgeon",
-        image:"./img/doctor5.jpg" 
+        image:"./img/Rishavjain.png" 
     },
     {
         name : "Dr. Nashir Khan",

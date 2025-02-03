@@ -250,27 +250,24 @@ const data = {
     },
     medical: {
         services: [
-            { icon: "fa-heart", title: "Cardiology", description: "Specialized care for heart and cardiovascular health." },
-            { icon: "fa-brain", title: "Neurology", description: "Diagnosis and treatment of nervous system disorders." },
-            { icon: "fa-user-md", title: "Neurosurgery", description: "Surgical treatment for neurological conditions." },
-            { icon: "fa-bone", title: "Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
-            { icon: "fas fa-kidney", title: "Nephrology", description: "Care for kidney-related health issues." },
-            { icon: "fa-radiation", title: "Radiation Oncology", description: "Treatment of cancer using radiation therapy." },
-            { icon: "fa-user-md", title: "Gastroenterology", description: "Diagnosis and treatment of digestive system disorders." },
-            { icon: "fa-scalpel", title: "Gastro Surgery", description: "Surgical procedures for gastrointestinal issues." },
-            { icon: "fa-syringe", title: "Onco Surgery", description: "Surgical treatment for cancer patients." },
-            { icon: "fa-user-md", title: "Medical Oncology", description: "Comprehensive cancer care and treatments." },
-            { icon: "fa-user-md", title: "Reproductive Medicine", description: "Treatment for reproductive health issues." },
-            { icon: "fa-female", title: "Obstetrics and Gynaecology", description: "Care for women's reproductive health." },
-           
-            { icon: "fa-baby", title: "Pediatrics & Neonatology", description: "Healthcare services for newborns and children." },
-            { icon: "fa-ear", title: "ENT", description: "Care for ear, nose, and throat disorders." },
-            { icon: "fa-procedures", title: "Urology and Urosurgery", description: "Care for urinary tract and male reproductive system." },
-            { icon: "fa-child", title: "Pediatrics", description: "Healthcare services for children and adolescents." },
-            { icon: "fa-user-md", title: "Psychiatrist", description: "Mental health assessment and treatment." },
-            
-            
-            { icon: "fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." },
+            { icon: "fas fa-heartbeat", title: "Cardiology", description: "Specialized care for heart and cardiovascular health." },
+    { icon: "fas fa-brain", title: "Neurology", description: "Diagnosis and treatment of nervous system disorders." },
+    { icon: "fas fa-user-md", title: "Neurosurgery", description: "Surgical treatment for neurological conditions." },
+    { icon: "fas fa-bone", title: "Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
+    { image: "../img/kidney.png", title: "Nephrology", description: "Care for kidney-related health issues." },
+    { icon: "fas fa-radiation", title: "Radiation Oncology", description: "Treatment of cancer using radiation therapy." },
+    { icon: "fas fa-procedures", title: "Gastroenterology", description: "Diagnosis and treatment of digestive system disorders." },
+    { icon: "fas fa-cut", title: "Gastro Surgery", description: "Surgical procedures for gastrointestinal issues." },
+    { icon: "fas fa-syringe", title: "Onco Surgery", description: "Surgical treatment for cancer patients." },
+    { icon: "fas fa-dna", title: "Medical Oncology", description: "Comprehensive cancer care and treatments." },
+    { icon: "fas fa-venus-mars", title: "Reproductive Medicine", description: "Treatment for reproductive health issues." },
+    { icon: "fas fa-female", title: "Obstetrics and Gynaecology", description: "Care for women's reproductive health." },
+    { icon: "fas fa-baby", title: "Pediatrics & Neonatology", description: "Healthcare services for newborns and children." },
+    { image: "../img/ent.png", title: "ENT", description: "Care for ear, nose, and throat disorders." },
+    { icon: "fas fa-procedures", title: "Urology and Urosurgery", description: "Care for urinary tract and male reproductive system." },
+    { image: "../img/brain.png", title: "Psychiatry", description: "Mental health assessment and treatment." },
+    { icon: "fas fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." }
+
         ],
         
     },
@@ -335,7 +332,16 @@ const data = {
             }
           ],
           
-    }
+    },
+    dyglasis:{
+        services : [
+            { 
+              icon: "fa-stethoscope", 
+              title: "Dyglasis Services", 
+              description: "Comprehensive dyglasis services to ensure accurate health assessments and timely interventions."
+            },
+            ]
+        }
 };
 
 
@@ -376,7 +382,7 @@ function loadDivision(division, button) {
             card.innerHTML = `
                 <div class="service-item bg-light  rounded d-flex flex-column align-items-center justify-content-center text-center" onclick="locateContact()">
                     <div class="service-icon mb-4">
-                        <i class="fa fa-2x ${service.icon} text-white"></i>
+                        ${service.icon ? `<i class="fa fa-2x ${service.icon} text-white"></i>` : `<img src=${service.image} class="w-10 h-10 object-cover" style="width: 40px"/>`}
                     </div>
                     <h4 class="mb-3">${service.title}</h4>
                     <p class="m-0">${service.description}</p>
