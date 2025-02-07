@@ -29,7 +29,7 @@ const doctors = [
     },
     {
         name : "Dr. Nashir Khan",
-        specialization:"Cardiothoracic Surgeon",
+        specialization:"MBBs, MD, Respiratory Medicine",
         image:"./img/doctor6.jpg" 
     },
     {
