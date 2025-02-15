@@ -158,77 +158,77 @@ const data = {
             {
                 icon: "fas fa-brain",
                 title: "MRI SCAN",
-                description: "Magnetic Resonance Imaging for detailed internal images. Time taken: 30 to 60 minutes (Approx)."
+                description: "Magnetic Resonance Imaging for detailed internal images."
             },
             {
                 icon: "fas fa-x-ray",
                 title: "CT SCAN",
-                description: "Computed Tomography scan for cross-sectional images. Time taken: 10 to 30 minutes (Approx)."
+                description: "Computed Tomography scan for cross-sectional images."
             },
             {
                 icon: "fas fa-wave-square",
                 title: "3D/4D SONOGRAPHY",
-                description: "Ultrasound imaging for various diagnostic purposes. Time taken: 30 to 60 minutes (Approx)."
+                description: "Ultrasound imaging for various diagnostic purposes."
             },
             {
                 icon: "fas fa-tint",
                 title: "COLOR DOPPLER",
-                description: "Non-invasive test to evaluate blood flow through vessels. Time taken: 30 to 45 minutes (Approx)."
+                description: "Non-invasive test to evaluate blood flow through vessels."
             },
             {
                 icon: "fas fa-tint",
                 title: "BLOOD TEST", 
-                description: "Complete blood analysis including CBC, lipid profile, and blood sugar. Time taken: 2 to 3 hours (Approx)."
+                description: "Complete blood analysis including CBC, lipid profile, and blood sugar."
             },
             {
                 icon: "fa-solid fa-pills",
                 title: "VITAMIN CHECKUP",
-                description: "Comprehensive vitamin and mineral deficiency screening. Time taken: 2 to 3 hours (Approx)."
+                description: "Comprehensive vitamin and mineral deficiency screening."
             },
             {
                 icon: "fa-solid fa-shield-virus",
                 title: "ALLERGY TEST",
-                description: "Detailed allergy screening and sensitivity tests. Time taken: 2 to 3 hours (Approx)."
+                description: "Detailed allergy screening and sensitivity tests."
             },
             {
                 icon: "fa-solid fa-stethoscope",
                 title: "BASIC HEALTH CHECK-UP",
-                description: "Complete basic health screening. Time taken: 3 to 4 hours (Approx)."
+                description: "Complete basic health screening."
             },
             {
                 icon: "fa-solid fa-heart", 
                 title: "COMPREHENSIVE HEART CHECK-UP",
-                description: "Detailed cardiac evaluation. Time taken: 3 to 4 hours (Approx)."
+                description: "Detailed cardiac evaluation."
             },
             {
                 icon: "fa-solid fa-user-tie",
                 title: "EXECUTIVE HEALTH CHECK-UP",
-                description: "Comprehensive executive screening. Time taken: 4 to 5 Hours (Approx)."
+                description: "Comprehensive executive screening."
             },
             {
                 icon: "fa-solid fa-hospital-user",
                 title: "WHOLE BODY CHECK-UP",
-                description: "Complete body examination. Time taken: 3 to 4 hours (Approx)."
+                description: "Complete body examination."
             },
             {
                 icon: "fa-solid fa-venus",
                 title: "WELL WOMEN HEALTH CHECK-UP",
-                description: "Women-specific health screening. Time taken: 3 to 4 hours (Approx)."
+                description: "Women-specific health screening."
             },
             {
                 icon: "fas fa-user-plus",
                 title: "SENIOR CITIZENS HEALTH CHECK-UP", 
-                description: "Elder-focused health assessment. Time taken: 4 to 5 Hours (Approx)."
+                description: "Elder-focused health assessment."
             },
             {
                 icon: "fas fa-tint",
                 title: "ADVANCED DIABETIC CHECK-UP",
-                description: "Comprehensive diabetes screening. Time taken: 3 to 4 hours (Approx)."
+                description: "Comprehensive diabetes screening."
             },
             {
                 icon: "fa-solid fa-child",
                 title: "CHILD HEALTH CHECK-UP",
-                description: "Pediatric health assessment. Time taken: 3 to 4 hours (Approx)."
+                description: "Pediatric health assessment."
             },
             {
                 icon: "fas fa-clipboard-list",
@@ -252,11 +252,11 @@ const data = {
         services: [
             { icon: "fas fa-heartbeat", title: "Cardiology", description: "Specialized care for heart and cardiovascular health." },
     { icon: "fas fa-brain", title: "Neurology", description: "Diagnosis and treatment of nervous system disorders." },
-    { icon: "fas fa-user-md", title: "Neurosurgery", description: "Surgical treatment for neurological conditions." },
-    { icon: "fas fa-bone", title: "Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
+    { image: "../img/neorology.png", title: "Neurosurgery", description: "Surgical treatment for neurological conditions." },
+    { image: "../img/orthopedic.png", title: "Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
     { image: "../img/kidney.png", title: "Nephrology", description: "Care for kidney-related health issues." },
     { icon: "fas fa-radiation", title: "Radiation Oncology", description: "Treatment of cancer using radiation therapy." },
-    { icon: "fas fa-procedures", title: "Gastroenterology", description: "Diagnosis and treatment of digestive system disorders." },
+    { image: "../img/Gastroenterologist.png", title: "Gastroenterology", description: "Diagnosis and treatment of digestive system disorders." },
     { icon: "fas fa-cut", title: "Gastro Surgery", description: "Surgical procedures for gastrointestinal issues." },
     { icon: "fas fa-syringe", title: "Onco Surgery", description: "Surgical treatment for cancer patients." },
     { icon: "fas fa-dna", title: "Medical Oncology", description: "Comprehensive cancer care and treatments." },
