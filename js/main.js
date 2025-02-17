@@ -156,32 +156,32 @@ const data = {
     diagnostics: {
         services: [
             {
-                icon: "fas fa-brain",
+                image: "../img/mri.png",
                 title: "MRI SCAN",
                 description: "Magnetic Resonance Imaging for detailed internal images."
             },
             {
-                icon: "fas fa-x-ray",
+                image: "../img/mri.png",
                 title: "CT SCAN",
                 description: "Computed Tomography scan for cross-sectional images."
             },
             {
-                icon: "fas fa-wave-square",
+                image: "../img/sonography.png",
                 title: "3D/4D SONOGRAPHY",
                 description: "Ultrasound imaging for various diagnostic purposes."
             },
             {
-                icon: "fas fa-tint",
+                image: "../img/sonography.png",
                 title: "COLOR DOPPLER",
                 description: "Non-invasive test to evaluate blood flow through vessels."
             },
             {
-                icon: "fas fa-tint",
+                image: "../img/bloodTest.png",
                 title: "BLOOD TEST", 
                 description: "Complete blood analysis including CBC, lipid profile, and blood sugar."
             },
             {
-                icon: "fa-solid fa-pills",
+                image: "../img/vitamin.png",
                 title: "VITAMIN CHECKUP",
                 description: "Comprehensive vitamin and mineral deficiency screening."
             },
@@ -206,24 +206,25 @@ const data = {
                 description: "Comprehensive executive screening."
             },
             {
-                icon: "fa-solid fa-hospital-user",
+                image: "../img/body.png",
                 title: "WHOLE BODY CHECK-UP",
                 description: "Complete body examination."
             },
             {
-                icon: "fa-solid fa-venus",
+                image: "../img/daibatic.png",
+                // image:"../img/body.png",
+                title: "ADVANCED DIABETIC CHECK-UP",
+                description: "Comprehensive diabetes screening."
+            },
+            {
+                image: "../img/woman.png",
                 title: "WELL WOMEN HEALTH CHECK-UP",
                 description: "Women-specific health screening."
             },
             {
-                icon: "fas fa-user-plus",
+                image: "../img/Senior.png",
                 title: "SENIOR CITIZENS HEALTH CHECK-UP", 
                 description: "Elder-focused health assessment."
-            },
-            {
-                icon: "fas fa-tint",
-                title: "ADVANCED DIABETIC CHECK-UP",
-                description: "Comprehensive diabetes screening."
             },
             {
                 icon: "fa-solid fa-child",
@@ -233,7 +234,7 @@ const data = {
             {
                 icon: "fas fa-clipboard-list",
                 title: "OTHER DIAGNOSTIC TESTS",
-                description: "Various other diagnostic tests as per physician's recommendation. Time taken: Varies."
+                description: "Various other diagnostic tests as per physician's recommendation."
             },
            
         ],
@@ -253,19 +254,24 @@ const data = {
             { icon: "fas fa-heartbeat", title: "Cardiology", description: "Specialized care for heart and cardiovascular health." },
     { icon: "fas fa-brain", title: "Neurology", description: "Diagnosis and treatment of nervous system disorders." },
     { image: "../img/neorology.png", title: "Neurosurgery", description: "Surgical treatment for neurological conditions." },
-    { image: "../img/orthopedic.png", title: "Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
+    { image: "../img/orthopedic.png", title: "Joint replacement & Orthopaedics", description: "Diagnosis and treatment of musculoskeletal disorders." },
     { image: "../img/kidney.png", title: "Nephrology", description: "Care for kidney-related health issues." },
     { icon: "fas fa-radiation", title: "Radiation Oncology", description: "Treatment of cancer using radiation therapy." },
     { image: "../img/Gastroenterologist.png", title: "Gastroenterology", description: "Diagnosis and treatment of digestive system disorders." },
-    { icon: "fas fa-cut", title: "Gastro Surgery", description: "Surgical procedures for gastrointestinal issues." },
-    { icon: "fas fa-syringe", title: "Onco Surgery", description: "Surgical treatment for cancer patients." },
+    { image: "../img/gestrosurgory.png", title: "Gastro Surgery", description: "Surgical procedures for gastrointestinal issues." },
+    { image: "../img/gestrosurgory.png", title: "Onco Surgery", description: "Surgical treatment for cancer patients." },
     { icon: "fas fa-dna", title: "Medical Oncology", description: "Comprehensive cancer care and treatments." },
     { icon: "fas fa-venus-mars", title: "Reproductive Medicine", description: "Treatment for reproductive health issues." },
     { icon: "fas fa-female", title: "Obstetrics and Gynaecology", description: "Care for women's reproductive health." },
     { icon: "fas fa-baby", title: "Pediatrics & Neonatology", description: "Healthcare services for newborns and children." },
     { image: "../img/ent.png", title: "ENT", description: "Care for ear, nose, and throat disorders." },
-    { icon: "fas fa-procedures", title: "Urology and Urosurgery", description: "Care for urinary tract and male reproductive system." },
+    { image: "../img/urology.png", title: "Urology and Urosurgery", description: "Care for urinary tract and male reproductive system." },
     { image: "../img/brain.png", title: "Psychiatry", description: "Mental health assessment and treatment." },
+    { 
+        image: "../img/dylsisService.png", 
+        title: "Dialysis Services", 
+        description: "Expert dialysis services providing thorough health evaluations and prompt medical responses."
+      },
     { icon: "fas fa-ambulance", title: "Ambulance Services", description: "Emergency transport and care." }
 
         ],
@@ -277,7 +283,7 @@ const data = {
             { icon: "fa-users", title: "Family Health Insurance", description: "Protection for the entire family with extensive medical coverage." },
             { icon: "fa-building", title: "Corporate Health Insurance", description: "Group health insurance plans for businesses and employees." },
             { icon: "fa-heart", title: "Critical Illness Coverage", description: "Specialized coverage for major illnesses and conditions." },
-            { icon: "fa-hospital", title: "Hospital Cash Benefits", description: "Daily allowance during hospitalization periods." },
+            { icon: "fa-hospital", title: "Hospital Cashless Treatment", description: "Daily allowance during hospitalization periods." },
             { icon: "fa-wheelchair", title: "Senior Citizen Plans", description: "Tailored insurance plans for elderly healthcare needs." },
             { icon: "fa-baby", title: "Maternity Coverage", description: "Insurance for pregnancy and childbirth related expenses." },
             { icon: "fa-pills", title: "OPD Coverage", description: "Coverage for regular doctor visits and medications." },
@@ -291,17 +297,17 @@ const data = {
         services : [
             
             { 
-              icon: "fa-users", 
+              image: "../img/Senior.png",
               title: "Elder Care", 
               description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
             },
             { 
-                icon: "fa-heart", 
+                image: "../img/nurcing.png",
                 title: "Home Nursing Services", 
                 description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
-              },
+            },
             { 
-              icon: "fa-walking", 
+                image: "../img/phy.png",
               title: "Physiotherapy", 
               description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
             },
@@ -329,19 +335,16 @@ const data = {
               icon: "fa-hands-helping", 
               title: "Care Taker At Home", 
               description: "Health care services offer the same service and care as in the hospital in terms of testing and evaluation by doctors, nurses, and other team members."
+            },
+            { 
+                image: "../img/bloodTest.png",
+              title: "Blood sample collection", 
+              description: "Convenient at-home blood sample collection by certified professionals, ensuring accurate results with proper handling and timely laboratory analysis."
             }
           ],
           
     },
-    Dialysis:{
-        services : [
-            { 
-              icon: "fa-stethoscope", 
-              title: "Dialysis Services", 
-              description: "Expert dialysis services providing thorough health evaluations and prompt medical responses."
-            },
-            ]
-        }
+    
 };
 
 
@@ -402,7 +405,7 @@ function loadDivision(division, button) {
                     <div class="service-icon mb-4">
                         <i class="fa fa-2x fa-th-list text-white"></i>
                     </div>
-                    <h4 class="mb-3">See All</h4>
+                    <h4 class="mb-3">Other departments</h4>
                     <p class="m-0">Explore all services available in this category</p>
                     <button class="btn btn-lg btn-primary btn-bg-primary mt-3 border-0 rounded-pill" onclick="navigateToAllServices('${division}')">
                         <i class="bi bi-arrow-right"></i> See All

@@ -18,6 +18,11 @@ const doctors = [
     
     },
     {
+        name : "Dr. Minhajuddin Ahmad",
+        specialization:"Pediatrician",
+        image:"./img/doctor8.1.jpg" 
+    },
+    {
         name : "Dr. Anshul Jain",
         specialization:"Physician",
         image:"./img/doctor4.jpg" 
@@ -37,11 +42,7 @@ const doctors = [
         specialization:"Cardiologist",
         image:"./img/doctor7.jpg" 
     },
-    {
-        name : "Dr. Minhajuddin Ahmad",
-        specialization:"Pediatrician",
-        image:"./img/doctor8.1.jpg" 
-    },
+    
    
 ];
 
